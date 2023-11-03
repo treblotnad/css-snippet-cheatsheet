@@ -1,0 +1,64 @@
+:root{
+    --c-primary: #e866ec;
+    --c-second: #33393f;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--c-second);
+    color:white;
+    font-size: 19px;
+    font-weight: bold;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--c-primary);
+    font-weight: bold;
+}
+
+header{
+    
+}
+main{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+}
+
+footer{
+    margin-top: 5rem;
+}
+    
+
+.text-center{
+    text-align: center;
+}
+
+.card{
+    position: relative;
+    border: 2px dashed white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.card h2{
+    position: absolute;
+    top:-45px;
+    width: calc(100% - 4rem);
+
+    background-color: var(--c-second);
+    padding: .3rem .75rem;
+    border: 2px solid white;
+    border-radius: 7px;
+   
+    
+}
+
+.card pre{
+    background-image: linear-gradient(var(--c-primary),rgb(134, 23, 134, .4));
+    border-radius: 7px;
+}
+
+.card code{
+    line-height: 1.3;
+}
